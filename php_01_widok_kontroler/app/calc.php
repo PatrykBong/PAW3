@@ -26,7 +26,11 @@ if (empty( $messages )) {
 	
 	if (! is_numeric( $pr )) {
 		$messages [] = 'Oprocentowanie nie jest liczbą całkowitą';
-	}	
+	}
+	
+	if (! is_numeric( $lt )) {
+		$messages [] = 'Ilość lat nie jest liczbą całkowitą';
+	}
 }
 
 if (empty ( $messages )) {
